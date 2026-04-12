@@ -1,0 +1,103 @@
+import '../domain/models/tutor_profile.dart';
+
+class FakeData {
+  static final List<TutorProfile> tutors = [
+    TutorProfile(
+      id: '1',
+      name: 'Obaidul Quder',
+      subjects: ['Math', 'Physics'],
+      classRange: 'Class 9-10',
+      location: 'Mirpur, Dhaka',
+      salaryRange: '5000-7000 BDT',
+      isVerified: true,
+      rating: 4.5,
+      imageUrl: 'https://th.bing.com/th/id/OSK.UJIM6qY6GBt3hLq6_mVkOUU5fXr9azk8fzOUokGh7Sg?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3',
+      bio: 'Experienced Math and Physics tutor with over 5 years of teaching experience. I focus on conceptual clarity and problem-solving skills.',
+      reviews: [
+        Review(
+          id: 'r1',
+          reviewerName: 'Sakib Khan',
+          rating: 4.5,
+          comment: 'Sir explains complex topics very easily.',
+          date: DateTime.now().subtract(const Duration(days: 10)),
+        ),
+      ],
+    ),
+    TutorProfile(
+      id: '2',
+      name: 'Sheikh Hasina',
+      subjects: ['Biology', 'Chemistry'],
+      classRange: 'Class 6-8',
+      location: 'Dhanmondi, Dhaka',
+      salaryRange: '4000-6000 BDT',
+      isVerified: true,
+      rating: 4.8,
+      imageUrl: 'https://www.aljazeera.com/wp-content/uploads/2024/01/2024-01-07T044127Z_1771836536_RC2SC5A8SZNK_RTRMADP_3_BANGLADESH-ELECTION-1-1704691377.jpg?resize=1920%2C1440',
+      bio: 'Biology enthusiast and Medical student. I love to teach science with real-life examples.',
+      reviews: [
+        Review(
+          id: 'r2',
+          reviewerName: 'Aisha Siddiqua',
+          rating: 5.0,
+          comment: 'Best biology teacher ever!',
+          date: DateTime.now().subtract(const Duration(days: 5)),
+        ),
+      ],
+    ),
+    TutorProfile(
+      id: '3',
+      name: 'Md Khan Bahadur Sadi',
+      subjects: ['Math', 'ICT'],
+      classRange: 'Class 9-12',
+      location: 'Shipyard, Khulna',
+      salaryRange: '3000-5000 BDT',
+      isVerified: false,
+      rating: 4.0,
+      imageUrl: 'https://avatars.githubusercontent.com/u/170100848?v=4',
+      bio: 'English literature student. I can help your child improve their spoken and written English.',
+      reviews: [],
+    ),
+    TutorProfile(
+      id: '4',
+      name: 'Sajeeb Wazed Namrood',
+      subjects: ['Bangla', 'General Science'],
+      classRange: 'Class 6-8',
+      location: 'Khulna Sadar',
+      salaryRange: '3500-5000 BDT',
+      isVerified: true,
+      rating: 4.7,
+      imageUrl: 'https://tse2.mm.bing.net/th/id/OIP.yZRGZgpcEMgTjr1kKBJNsAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3',
+      bio: 'Patient and friendly tutor for junior classes.',
+      reviews: [
+        Review(
+          id: 'r3',
+          reviewerName: 'Rahat',
+          rating: 4.5,
+          comment: 'Very good with kids.',
+          date: DateTime.now().subtract(const Duration(days: 20)),
+        ),
+      ],
+    ),
+    TutorProfile(
+      id: '5',
+      name: 'Muhammed Zafar Iqbal',
+      subjects: ['Higher Math', 'Physics'],
+      classRange: 'Class 11-12',
+      location: 'Rajshahi City',
+      salaryRange: '6000-8000 BDT',
+      isVerified: true,
+      rating: 4.9,
+      imageUrl: 'https://th.bing.com/th/id/OSK.ecq43NLazOSEAeSQWLNBVB1PRbuLeUHSrdFVFJS6CbM?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3',
+      bio: 'Engineering student from RUET. Expert in Higher Math and Physics for HSC candidates.',
+      reviews: [
+        Review(
+          id: 'r4',
+          reviewerName: 'Mehedi Hasan',
+          rating: 5.0,
+          comment: 'Got A+ in Physics because of Tanvir bhai.',
+          date: DateTime.now().subtract(const Duration(days: 60)),
+        ),
+      ],
+    ),
+  ];
+}
