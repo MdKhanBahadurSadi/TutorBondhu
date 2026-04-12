@@ -1,6 +1,14 @@
-web/* linguist-vendored
-android/* linguist-vendored
-ios/* linguist-vendored
-windows/* linguist-vendored
-linux/* linguist-vendored
-macos/* linguist-vendored
+# Flutter platform folders (ignore language stats)
+android/** linguist-vendored
+ios/** linguist-vendored
+web/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+
+# Generated / build files
+build/** linguist-vendored
+.dart_tool/** linguist-vendored
+
+# Optional: ignore test impact (if you want only main app code)
+test/** linguist-vendored
